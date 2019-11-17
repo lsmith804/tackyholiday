@@ -1,0 +1,13 @@
+* {
+    background-color: green;
+    color: dark-red;
+    font-size: 36px;
+}
+
+a {
+    display: block;
+}
+
+img {
+    display: inline;
+}

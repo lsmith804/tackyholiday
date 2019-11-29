@@ -20,7 +20,7 @@ function submit() {
     let newDate = localDate + ' @ ' + localTime;
 
 
-    localStorage.setItem('📅' + newDate, ['🎄: '+ message + '<br>' +   ' ❤️: ' + name]);
+    localStorage.setItem('📅' + newDate, ['💌: '+ message + '<br>' +   ' ❤️: ' + name]);
     // localStorage.setItem('📅' + new Date(), [newEntry.newName, newEntry.newMessage]);
     // localStorage.setItem('📅' + new Date(), newEntry);
     // localStorage.setItem('📅' + new Date(), {name: name, message: message});

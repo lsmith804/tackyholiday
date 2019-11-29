@@ -1,18 +1,50 @@
-let name = document.getElementById('name');
-let message = document.getElementById('message');
-let table = document.getElementById('guestbook');
+window.onload = function load () {
+    loadTable();
+}
+
+var totalEntries = localStorage.length;
+
+function submit() {
+    
+    var name = document.getElementById('name').value;
+    var message = document.getElementById('message').value;
+
+    // var newEntry = {
+    //     newName: name,
+    //     newMessage: message
+    // }
+
+    let date = new Date();
+    let localDate = date.toLocaleDateString();
+    let localTime = date.toLocaleTimeString();
+    let newDate = localDate + ' @ ' + localTime;
 
 
-function submitEntry() {
-    // console.log("Guestbook entry submitted");
-    // console.log("input was" + input.value);
-    // console.log("do something with input", input);
-    localStorage.setItem(name.value, message.value);
-    console.log(localStorage);
-    let newRow = table.insertRow(-1);
-    // let newCell = newRow.insertCell(0);
-    // let newText = document.createTextNode('New bottom row');
-    // newCell.appendChild(newText);
-    newRow.innerHTML = localStorage[0];
+    localStorage.setItem('📅' + newDate, ['🎄: '+ message + '<br>' +   ' ❤️: ' + name]);
+    // localStorage.setItem('📅' + new Date(), [newEntry.newName, newEntry.newMessage]);
+    // localStorage.setItem('📅' + new Date(), newEntry);
+    // localStorage.setItem('📅' + new Date(), {name: name, message: message});
 
-};
+
+    location.reload();
+}
+
+function loadTable() {
+    console.log("from localStorage: ", localStorage);
+
+    for (var i in localStorage){
+        var table = document.getElementById('guestbook');    
+            if (i.startsWith('📅')){
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = i; //Timestamp
+            var cell2 = row.insertCell(1);
+            cell2.innerHTML = localStorage[i];
+        }  
+    }
+}
+
+function deleteLocalStorage() {
+    localStorage.clear();
+    location.reload();
+}

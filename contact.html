@@ -1,12 +1,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="contact.css">
-        <title>Contact</title>
-        
+        <title>Contact</title>        
     </head>
 
     <body>
-
         <div>
             <h1>Contact Info</h1>
             
@@ -16,23 +14,26 @@
             
             <hr>
             
-            <h1>GUESTBOOK</h1>
-            
-            <form>
+            <div class="guestbookArea">
+                <p>Leave a message in the <strong>GUESTBOOK!</strong></p>
+                <textarea rows="10" cols="75" placeholder="Enter a holiday message" id="message" type="text" name="message"></textarea>
+                <p>From:</p>
                 <input placeholder="Name" id="name" type="text" name="name"/>
-                <input placeholder="Enter a holiday message" id="message" type="text" name="message"/>
-                <button id="submit" onclick="submitEntry()">Submit</button>
-            </form>
+                <button onclick="submit()">Submit</button>
+            </div>
 
+            <hr>
+
+            <h1>GUESTBOOK</h1>
             <table id="guestbook">
                 <tr>
-                    <th>Entry</th>
-                </tr>
-                <tr>
-                    <td>Test Entry belongs here. Hopefully a full greeting TBD</td>
+                    <th id="guestTime">Timestamp</th>
+                    <th id="guestName">Message</th>
                 </tr>
             </table>
-            
+
+            <!-- <button onclick="deleteLocalStorage()">Delete All Entries</button> -->
+
         </div>
         
         <footer>
@@ -41,7 +42,9 @@
         </footer>
         
     </body>
+
     <script src="contact.js"></script>
+
 
 
 </html>

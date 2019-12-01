@@ -1,4 +1,13 @@
-* {
-    background-color: red;
-    color: darkred;
+body {
+    /* background-color: red; */
+    background-image: url('assets/tacky.jpg');
+    background-size: auto 100%;
+    background-position-y: center;
+    color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.banner {
+    width: 20%;
 }

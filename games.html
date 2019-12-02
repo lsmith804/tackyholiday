@@ -1,30 +1,115 @@
 <html>
     <head>
         <title>Games</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="games.css">
     </head>
+
     <script src="games.js"></script>
+    
     <body>
         <h1>Games</h1>
-        <h3>Most of these games can be played online. ENJOY!</h3>
+        <hr>
+        🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄❄️⛄🎄
+        <hr>
 
-        <table>
-            <tr>
-                <th>Platform</th>
-                <th>Title</th>
-            </tr>
-            <tr>
-                <td>Web</td>
-                <td><a href="http://www.boredbro.com/play/adventure-games/mario-s-christmas-quest.html" target="_blank">Mario's Christmas Quest</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Web</td>
-                <td><a href="https://archive.org/details/win3_SKIFREE" target="_blank">Ski Free</a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div id="modal-games">
+            <h3>Open a Game</h3>
+
+            <p>
+                <button type="button" class="btn-success" data-toggle="modal" data-target="#sudoku">
+                    Christmas Sudoku
+                </button>
+            </p>
+        
+            <p>
+                <button type="button" class="btn-danger" data-toggle="modal" data-target="#mahjong">
+                    Christmas Mahjong
+                </button>
+            </p>
+            
+            <p>
+                <button type="button" class="btn-success" data-toggle="modal" data-target="#skifree">
+                    SkiFree
+                </button>
+            </p>
+            
+            <p>
+                <button type="button" class="btn-danger" data-toggle="modal" data-target="#freecell">
+                    Freecell
+                </button>
+            </p>
+        </div>
+        
+
+        <div class="modal fade" id="sudoku" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <iframe src='https://www.embed.com/app/sudoku/christmas/index.html' style='width: 800px; height: 600px;' scrolling='no' frameBorder='0'></iframe>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="mahjong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <iframe src='https://www.embed.com/app/mahjong/christmas/index.html' style='width: 800px; height: 600px;' scrolling='no' frameBorder='0'></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="skifree" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <iframe width="600" height="600" src="https://basicallydan.github.io/skifree.js/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="freecell" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <iframe src='https://games.gameboss.com/freecellchristmas/index.html?lang=en' width='880' height='600' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no'></iframe>
+                </div>
+            </div>
+        </div>
+
+    <hr>
+
+        <div>
+            <p>HFK also recommends checking out console games with holiday themes. Check out links below for purchase info!</p>
+            <table>
+                <label>
+                    <h3>Console Games</h3>
+                </label>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Title</th>
+                    </tr>
+                    <tr>
+                        <td>Wii</td>
+                        <td>
+                            <a href="https://www.amazon.com/We-Wish-You-Merry-Christmas-Nintendo/dp/B002PK7HXQ" target="_blank">
+                                We Wish You A Merry Christmas
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sega Genesis</td>
+                        <td>
+                            <a href="https://www.etsy.com/listing/494589071/daze-before-christmas?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_ts1-b-electronics_and_accessories-video_games&utm_custom1=94e934e3-39d6-4ec3-a03d-e4001b99b4a0&utm_content=go_1844177651_68053168525_346363672974_pla-353987697789_c__494589071&gclid=CjwKCAiA5o3vBRBUEiwA9PVzaraw_HZEmuYIGYPt2TcD7t-yMNE0oBuGe_NU_Nf1sf2NluJJkURZ-BoC6gAQAvD_BwE" target="_blank">Daze Before Christmas</a></td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo DS</td>
+                        <td>
+                            <a href="https://www.ebay.com/itm/Nintendo-DS-DSi-3DS-2DS-How-The-Grinch-Stole-Christmas-Game-Only/254179316303?epid=61184243&hash=item3b2e44924f:g:c9EAAOSwTGZcm4kZ" target="_blank">How the Grinch Stole Christmas</a>
+                        </td>
+                        </tr>
+            </table>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

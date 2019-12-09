@@ -9,3 +9,11 @@ body {
 * {
     cursor: url(http://cur.cursors-4u.net/holidays/hol-5/hol445.ani), url(http://cur.cursors-4u.net/holidays/hol-5/hol445.gif), auto !important;
 }
+
+a {
+    color: darkred;
+}
+
+a:hover {
+    color: palegoldenrod
+}

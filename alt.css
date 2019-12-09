@@ -1,0 +1,25 @@
+body {
+    background-color: midnightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: palegreen;
+}
+
+a {
+    color: lime;
+}
+
+a:active {
+    color: orangered;
+}
+
+a:hover {
+    color: red;
+}
+
+p,img {
+    display: inline;
+}
+
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=131642), pointer !important;
+}

@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/snowfall.gif');
+    background-image: url('assets/pics/snowfall.gif');
     background-size: auto 100%;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -16,6 +16,10 @@ a img {
     line-height: 4px;
 }
 
+a:hover {
+    background-color: darkred;
+}
+
 .accent {
     display: block;
     margin: 0 auto 0 auto;
@@ -27,4 +31,5 @@ a img {
 
 * {
     font-size: larger;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=104340), pointer !important;
 }

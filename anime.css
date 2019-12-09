@@ -1,0 +1,12 @@
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=104340), pointer !important
+}

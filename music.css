@@ -1,0 +1,8 @@
+body {
+    background-color: darkslategray;
+}
+
+* {
+    font-size: larger;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=104340), pointer !important;
+}

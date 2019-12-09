@@ -10,3 +10,7 @@ body {
 h1, h3 {
     color: darkslateblue;
 }
+
+* {
+    cursor: url(assets/pics/ignis.jpg), pointer !important
+}

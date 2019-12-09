@@ -1,6 +1,6 @@
 body {
     /* background-color: red; */
-    background-image: url('assets/tacky.jpg');
+    background-image: url('assets/pics/tacky.jpg');
     background-size: auto 100%;
     background-position-y: center;
     color: lightgreen;
@@ -9,4 +9,8 @@ body {
 
 .banner {
     width: 20%;
+}
+
+* {
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=104340), pointer !important;
 }

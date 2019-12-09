@@ -30,7 +30,6 @@ function submit() {
 }
 
 function loadTable() {
-    console.log("from localStorage: ", localStorage);
 
     for (var i in localStorage){
         var table = document.getElementById('guestbook');    
